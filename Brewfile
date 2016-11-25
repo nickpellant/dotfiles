@@ -5,6 +5,7 @@ tap 'caskroom/cask'
 brew 'chruby'
 brew 'node'
 brew 'ruby-install'
+brew 'phantomjs'
 brew 'postgres'
 brew 'redis'
 
