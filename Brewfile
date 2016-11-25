@@ -5,6 +5,8 @@ tap 'caskroom/cask'
 brew 'chruby'
 brew 'node'
 brew 'ruby-install'
+brew 'postgres'
+brew 'redis'
 
 cask '1password'
 cask 'alfred'
