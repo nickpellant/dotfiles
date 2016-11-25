@@ -1,0 +1,8 @@
+language-babel@2.43.0
+language-haml@0.24.0
+language-matlab@0.2.1
+linter@1.11.18
+linter-eslint@7.3.2
+linter-js-yaml@1.2.5
+sort-lines@0.14.0
+wordcount@2.7.0
