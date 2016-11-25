@@ -7,6 +7,7 @@ brew 'node'
 brew 'ruby-install'
 
 cask '1password'
+cask 'alfred'
 cask 'atom'
 cask 'cleanmymac'
 cask 'dropbox'
