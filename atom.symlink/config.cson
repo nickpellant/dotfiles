@@ -1,42 +1,16 @@
 "*":
   core:
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-    ]
-    followSymlinks: false
-    hideGitIgnoredFiles: true
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
-    ]
+    projectHome: "/Users/nick/src"
+    telemetryConsent: "no"
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "one-dark-ui"
+      "solarized-dark-syntax"
     ]
   editor:
-    fontFamily: "Menlo"
-    fontSize: 15
     invisibles: {}
     showIndentGuide: true
-    softWrapAtPreferredLineLength: true
-  "go-plus":
-    goPath: "/Users/holman/Code/go"
-  "linter-eslint":
-    useGlobalEslint: true
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "spell-check":
-    grammars: [
-      "text.plain"
-      "source.gfm"
-      "text.git-commit"
-      "text.html.basic"
-    ]
+  "exception-reporting":
+    userId: "4a62f6e0-4ea6-a9cb-ca9a-7b27d339ecd6"
   welcome:
     showOnStartup: false
+  wordcount: {}
