@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 
 brew 'chruby'
+brew 'exercism'
 brew 'node'
 brew 'ruby-install'
 brew 'phantomjs'
