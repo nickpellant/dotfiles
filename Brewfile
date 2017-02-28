@@ -27,6 +27,7 @@ cask 'spotify'
 cask 'things'
 cask 'torbrowser'
 cask 'transmission'
+cask 'vagrant'
 cask 'vlc'
 cask 'ynab'
 
