@@ -20,3 +20,7 @@ brew update
 # Install software
 echo "› $DOTFILES/script/install"
 $DOTFILES/script/install
+
+# Cleanup homebrew & homebrew cask
+brew cleanup
+brew cask cleanup
