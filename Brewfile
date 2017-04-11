@@ -26,7 +26,6 @@ cask 'google-chrome'
 cask 'iterm2'
 cask 'licecap'
 cask 'little-snitch'
-cask 'namecoin'
 cask 'slack'
 cask 'spotify'
 cask 'things'
@@ -35,6 +34,9 @@ cask 'transmission'
 cask 'vagrant'
 cask 'vlc'
 cask 'ynab'
+
+cask 'ethereum-wallet'
+cask 'namecoin'
 
 mas 'Analog', id: 418343177
 mas 'Divvy', id: 413857545
