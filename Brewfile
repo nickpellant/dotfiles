@@ -43,3 +43,4 @@ mas 'Analog', id: 418343177
 mas 'Divvy', id: 413857545
 mas 'Numbers', id: 409203825
 mas 'Tweetbot', id: 557168941
+mas 'Reeder 3', id: 880001334
