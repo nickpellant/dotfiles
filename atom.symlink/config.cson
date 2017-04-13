@@ -12,6 +12,7 @@
     showIndentGuide: true
   "exception-reporting":
     userId: "4a62f6e0-4ea6-a9cb-ca9a-7b27d339ecd6"
+  "linter-ui-default": {}
   "one-dark-ui": {}
   welcome:
     showOnStartup: false
