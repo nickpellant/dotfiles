@@ -10,6 +10,7 @@ brew 'ruby-install'
 brew 'phantomjs'
 brew 'postgres'
 brew 'redis'
+brew 'syncthing'
 
 cask '1password'
 cask 'alfred'
