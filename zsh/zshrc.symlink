@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/nick/.oh-my-zsh
+export ZSH=/Users/nickpellant/.oh-my-zsh
 export DOTFILES=$HOME/Code/github/nickpellant/dotfiles
 
 # Set name of the theme to load.
