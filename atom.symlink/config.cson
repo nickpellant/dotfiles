@@ -1,12 +1,12 @@
 "*":
   core:
-    projectHome: "/Users/nick/src"
+    projectHome: "/Users/nickpellant/Code"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
     invisibles: {}
     showIndentGuide: true
