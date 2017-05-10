@@ -4,6 +4,7 @@ tap 'caskroom/cask'
 
 brew 'chruby'
 brew 'exercism'
+brew 'heroku'
 brew 'shellcheck'
 brew 'node'
 brew 'ruby-install'
