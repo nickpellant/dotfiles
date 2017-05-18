@@ -12,6 +12,7 @@ brew 'phantomjs'
 brew 'postgres'
 brew 'redis'
 brew 'syncthing'
+brew 'terraform'
 
 cask '1password'
 cask 'alfred'
