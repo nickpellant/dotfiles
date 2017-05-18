@@ -1,6 +1,9 @@
 busy-signal@1.3.0
 intentions@1.1.2
+language-docker@1.1.7
+language-terraform@0.8.1
 linter@2.1.2
+linter-docker@0.2.0
 linter-ruby@1.2.5
 linter-ui-default@1.2.2
 sort-lines@0.14.0
