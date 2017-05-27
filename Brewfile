@@ -33,7 +33,6 @@ cask 'licecap'
 cask 'little-snitch'
 cask 'slack'
 cask 'spotify'
-cask 'things'
 cask 'torbrowser'
 cask 'transmission'
 cask 'tunnelblick'
@@ -49,3 +48,4 @@ mas 'Divvy', id: 413857545
 mas 'Numbers', id: 409203825
 mas 'Tweetbot', id: 557168941
 mas 'Reeder 3', id: 880001334
+mas 'Things 3', id: 904280696
