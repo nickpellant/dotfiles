@@ -17,6 +17,7 @@ brew 'terraform'
 
 cask '1password'
 cask 'alfred'
+cask 'anki'
 cask 'atom'
 cask 'bartender'
 cask 'cleanmymac'
