@@ -41,6 +41,7 @@ cask 'tunnelblick'
 cask 'vagrant'
 cask 'vlc'
 cask 'ynab'
+cask 'whatsapp'
 
 cask 'ethereum-wallet'
 cask 'namecoin'
