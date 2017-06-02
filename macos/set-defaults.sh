@@ -89,6 +89,9 @@ chflags nohidden ~/Library
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
+# Prevent the creation of .DS_Store files
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
 ###############################################################################
 # Keyboard                                                                    #
 ###############################################################################
