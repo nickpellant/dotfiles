@@ -14,6 +14,7 @@ brew 'postgres'
 brew 'redis'
 brew 'syncthing'
 brew 'terraform'
+brew 'yarn'
 
 cask '1password'
 cask 'alfred'
