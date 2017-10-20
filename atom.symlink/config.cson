@@ -15,11 +15,12 @@
     showIndentGuide: true
   "exception-reporting":
     userId: "4a62f6e0-4ea6-a9cb-ca9a-7b27d339ecd6"
+  "linter-eslint":
+    fixOnSave: true
   "linter-ui-default":
     showPanel: true
   "one-dark-ui": {}
-  "standard-formatter":
-    formatOnSave: true
+  "standard-formatter": {}
   welcome:
     showOnStartup: false
   wordcount: {}
