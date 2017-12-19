@@ -1,4 +1,5 @@
 brew 'asdf'
 brew 'gpg'
 
+cask 'docker'
 cask 'iterm2'
