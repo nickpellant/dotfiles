@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# bootstrap-dev
+#
+# `boostrap-dev` setups dev environment
+
+BASEDIR=$(dirname $0)
+
+echo "Bootstrapping dev..."
+
+$BASEDIR/bundle-dev
+
+echo "Bootstrapping complete."

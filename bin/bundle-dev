@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# bundle-dev
+#
+# `bundle-dev` bundles Brewfile.dev
+
+DOTFILESDIR="$(dirname $0)"/..
+
+brew bundle --file=$DOTFILESDIR/Brewfile.dev
