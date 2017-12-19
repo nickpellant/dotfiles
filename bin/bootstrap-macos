@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# bootstrap-macos
+#
+# `boostrap-macos` installs hard dependencies for macos dotfiles
+
+echo "Bootstrapping macOS..."
+
+echo "Bootstrapping complete."
