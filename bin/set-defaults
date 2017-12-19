@@ -1,7 +1,0 @@
-#!/bin/sh
-#
-# Sets macOS defaults by running $DOTFILES/macos/set-defaults.sh.
-cd "$(dirname "$0")/.."
-export DOTFILES=$(pwd -P)
-
-exec $DOTFILES/macos/set-defaults.sh
