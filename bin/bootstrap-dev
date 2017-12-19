@@ -10,5 +10,6 @@ echo "Bootstrapping dev..."
 
 $BASEDIR/install-oh-my-zsh
 $BASEDIR/bundle-dev
+$BASEDIR/link-dots
 
 echo "Bootstrapping complete."
