@@ -11,3 +11,5 @@ atom.symlink/recovery
 
 git/gitconfig.local.symlink
 zsh/private.zsh
+
+.DS_Store
