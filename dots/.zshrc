@@ -23,3 +23,6 @@ HIST_STAMPS="dd/mm/yyyy"
 plugins=(git bundler)
 
 source $ZSH/oh-my-zsh.sh
+
+
+source /usr/local/opt/asdf/asdf.sh
