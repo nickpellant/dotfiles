@@ -4,3 +4,5 @@ brew 'yarn', args: ['without-node']
 
 cask 'docker'
 cask 'iterm2'
+
+mas 'Xcode', id: 497799835
