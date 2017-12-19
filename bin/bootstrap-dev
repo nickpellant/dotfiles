@@ -8,6 +8,7 @@ BASEDIR=$(dirname $0)
 
 echo "Bootstrapping dev..."
 
+$BASEDIR/install-oh-my-zsh
 $BASEDIR/bundle-dev
 
 echo "Bootstrapping complete."
