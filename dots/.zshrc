@@ -24,5 +24,7 @@ plugins=(git bundler)
 
 source $ZSH/oh-my-zsh.sh
 
+# Disable Homebrew analytics
+export HOMEBREW_NO_ANALYTICS=1
 
 source /usr/local/opt/asdf/asdf.sh
