@@ -4,6 +4,10 @@
 #
 # `boostrap-macos` installs hard dependencies for macos dotfiles
 
+BASEDIR=$(dirname $0)
+
 echo "Bootstrapping macOS..."
+
+$BASEDIR/install-homebrew
 
 echo "Bootstrapping complete."
