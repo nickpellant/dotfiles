@@ -6,4 +6,5 @@
 
 DOTFILESDIR="$(dirname $0)"/..
 
-brew bundle --file=$DOTFILESDIR/Brewfile.dev
+echo "  › Bundling Brewfile.dev..."
+brew bundle --file=$DOTFILESDIR/Brewfile.dev >/dev/null
