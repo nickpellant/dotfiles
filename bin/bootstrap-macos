@@ -10,5 +10,6 @@ echo "Bootstrapping macOS..."
 
 $BASEDIR/install-homebrew
 $BASEDIR/configure-macos
+$BASEDIR/bundle-macos
 
 echo "Bootstrapping complete."
