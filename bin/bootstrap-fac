@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# bootstrap-fac
+#
+# `boostrap-fac` setups fac extras
+
+BASEDIR=$(dirname $0)
+
+echo "Bootstrapping fac..."
+
+$BASEDIR/bundle-fac
+
+echo "Bootstrapping complete."

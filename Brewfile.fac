@@ -1,0 +1,2 @@
+brew 'qt@5.5'
+brew 'mysql@5.5'
