@@ -32,8 +32,3 @@ for src in $(find $DOTFILESDIR/zshs -name '*.zsh' -type f)
 do
   source $src
 done
-
-for src in $(find $DOTFILESDIR/zshs -name '*.path' -type f)
-do
-  source $src
-done
