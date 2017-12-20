@@ -1,6 +1,7 @@
 brew 'asdf'
 brew 'gpg'
 brew 'yarn', args: ['without-node']
+brew 'qt'
 
 cask 'docker'
 cask 'iterm2'
