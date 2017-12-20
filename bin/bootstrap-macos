@@ -9,5 +9,6 @@ BASEDIR=$(dirname $0)
 echo "Bootstrapping macOS..."
 
 $BASEDIR/install-homebrew
+$BASEDIR/configure-macos
 
 echo "Bootstrapping complete."
