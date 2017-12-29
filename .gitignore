@@ -9,7 +9,7 @@ atom.symlink/themes
 atom.symlink/blob-store
 atom.symlink/recovery
 
-git/gitconfig.local.symlink
+dots/.gitconfig.local
 zsh/private.zsh
 
 .DS_Store

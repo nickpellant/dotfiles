@@ -1,0 +1,38 @@
+# Local/private config goes in the include
+[include]
+  path = ~/.gitconfig.local
+[hub]
+  protocol = https
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[core]
+  editor = nano
+  trustctime = false
+[apply]
+  whitespace = nowarn
+[mergetool]
+  keepBackup = false
+[merge]
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true
+[difftool]
+  prompt = false
+[help]
+  autocorrect = 1
+[push]
+  # See `git help config` (search for push.default)
+  # for more information on different options of the below setting.
+  #
+  # Setting to git 2.0 default to suppress warning message
+  default = simple
+
+  # Pass --follow-tags option
+  # Pushes tags with branches
+  # Override with --no-follow-tags
+  followTags = true
+[diff]
+  # Detect copies as well as renames
+  renames = copies
