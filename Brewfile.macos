@@ -1,2 +1,4 @@
+brew 'syncthing'
+
 cask 'alfred'
 cask 'ynab'
