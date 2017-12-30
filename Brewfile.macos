@@ -1,4 +1,5 @@
 brew 'syncthing'
 
 cask 'alfred'
+cask 'fantastical'
 cask 'ynab'
