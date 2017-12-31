@@ -1,6 +1,7 @@
 brew 'syncthing'
 
 cask 'alfred'
+cask 'anki'
 cask 'fantastical'
 cask 'transmission'
 cask 'torbrowser'
