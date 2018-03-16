@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export USERDIR=/Users/$(whoami)
 export ZSH=$USERDIR/.oh-my-zsh
-export DOTFILESDIR=$USERDIR/Code/github/nickpellant/dotfiles
+export DOTFILESDIR=$USERDIR/Code/github.com/nickpellant/dotfiles
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
