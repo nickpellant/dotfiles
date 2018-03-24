@@ -1,7 +1,8 @@
-# Path to your oh-my-zsh installation.
+#!/bin/zsh
+
 export USERDIR=/Users/$(whoami)
-export ZSH=$USERDIR/.oh-my-zsh
 export DOTFILESDIR=$USERDIR/Code/github.com/nickpellant/dotfiles
+export ZSH=$USERDIR/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -24,6 +25,7 @@ HIST_STAMPS="dd/mm/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git bundler gpg-agent)
 
+source $USERDIR/.private
 source $ZSH/oh-my-zsh.sh
 
 # Disable Homebrew analytics
