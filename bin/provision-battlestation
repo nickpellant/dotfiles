@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-# provision-hackintosh
+# provision-battlestation
 #
-# `provision-hackintosh` provisions hackintosh workstation
+# `provision-battlestation` provisions battlestation
 
 BASEDIR=$(dirname "$0")
 
-echo "Provisioning hackintosh..."
+echo "Provisioning battlestation..."
 
 "$BASEDIR"/bootstrap-macos
 "$BASEDIR"/bootstrap-dev
