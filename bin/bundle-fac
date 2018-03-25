@@ -8,4 +8,4 @@ DOTFILESDIR="$(dirname "$0")"/..
 
 echo "  ›› Bundling Brewfile.fac..."
 
-brew bundle --file="$DOTFILESDIR"/Brewfile.fac >/dev/null
+brew bundle --file="$DOTFILESDIR"/Brewfile.fac | sed 's/^/      /'
