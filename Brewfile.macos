@@ -1,4 +1,4 @@
-brew 'syncthing'
+brew 'syncthing', restart_service: true
 
 cask '1password'
 cask 'alfred'
