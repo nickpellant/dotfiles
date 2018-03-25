@@ -1,5 +1,6 @@
 brew 'syncthing'
 
+cask '1password'
 cask 'alfred'
 cask 'anki'
 cask 'fantastical'
