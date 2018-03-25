@@ -1,15 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 #
 # bootstrap-dev
 #
-# `boostrap-dev` setups dev environment
+# `boostrap-dev` bootstraps a development workspace
 
-BASEDIR=$(dirname $0)
+BINDIR=$(dirname "$0")
 
-echo "Bootstrapping dev..."
+echo "  › Bootstrapping dev..."
 
-$BASEDIR/install-oh-my-zsh
-$BASEDIR/bundle-dev
-$BASEDIR/link-dots
+"$BINDIR"/install-oh-my-zsh
+"$BINDIR"/bundle-dev
+"$BINDIR"/link-dots
 
-echo "Bootstrapping complete."
+echo "  › Bootstrapping complete."

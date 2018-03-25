@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# provision-hackintosh
+#
+# `provision-hackintosh` provisions hackintosh workstation
+
+BASEDIR=$(dirname "$0")
+
+echo "Provisioning hackintosh..."
+
+"$BASEDIR"/bootstrap-macos
+"$BASEDIR"/bootstrap-dev
+
+echo "Provisioning complete."

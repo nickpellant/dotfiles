@@ -1,15 +1,24 @@
-#!/bin/sh
+#!/bin/bash
 #
 # bootstrap-macos
 #
-# `boostrap-macos` installs hard dependencies for macos dotfiles
+# `boostrap-macos` bootstraps a mac workspace
 
-BASEDIR=$(dirname $0)
+BINDIR=$(dirname "$0")
 
-echo "Bootstrapping macOS..."
+echo "  › Bootstrapping macOS..."
 
-$BASEDIR/install-homebrew
-$BASEDIR/configure-macos
-$BASEDIR/bundle-macos
+"$BINDIR"/install-homebrew
 
-echo "Bootstrapping complete."
+read -p "    ? Do you want to configure macOS defaults (y/n)? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    "$BINDIR"/configure-macos
+else
+    echo "    ›› Skipping macOS defaults configuration..."
+fi
+
+"$BINDIR"/bundle-macos
+
+echo "  › Bootstrapping complete."

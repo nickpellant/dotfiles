@@ -1,13 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 #
 # bootstrap-fac
 #
-# `boostrap-fac` setups fac extras
+# `boostrap-fac` bootrstraps a fac workspace
 
-BASEDIR=$(dirname $0)
+BINDIR=$(dirname "$0")
 
-echo "Bootstrapping fac..."
+echo "  › Bootstrapping fac..."
 
-$BASEDIR/bundle-fac
+"$BINDIR"/bundle-fac
 
-echo "Bootstrapping complete."
+echo "  › Bootstrapping complete."

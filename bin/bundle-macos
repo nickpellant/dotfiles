@@ -4,7 +4,8 @@
 #
 # `bundle-macos` bundles Brewfile.macos
 
-DOTFILESDIR="$(dirname $0)"/..
+DOTFILESDIR="$(dirname "$0")"/..
 
-echo "  › Bundling Brewfile.macos..."
-brew bundle --file=$DOTFILESDIR/Brewfile.macos >/dev/null
+echo "    ›› Bundling Brewfile.macos..."
+
+brew bundle --file="$DOTFILESDIR"/Brewfile.macos >/dev/null

@@ -1,14 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 #
 # link-dots
 #
 # `link-dots` symlinks dotfiles to $HOME
 
-DOTSDIR="$( cd "$(dirname $0)/../dots" ; pwd -P )"
+DOTSDIR="$( cd "$(dirname "$0")/../dots" || exit ; pwd -P )"
 
-echo "  › Linking dots..."
-for src in $(find $DOTSDIR -name '.*' -type f)
+echo "    ›› Linking dots..."
+while IFS= read -r -d '' src
 do
-  dst="$HOME/$(basename "${src}")"
-  ln -sfn "$src" "$dst"
-done
+    dst="$HOME/$(basename "${src}")"
+    ln -sfn "$src" "$dst"
+    echo "      ››› Linked $(basename "${src}")"
+done < <(find "$DOTSDIR" -name '.*' -type f ! -name '.*.example' -print0)

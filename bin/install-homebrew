@@ -1,22 +1,16 @@
-#!/bin/sh
+#!/bin/bash
 #
 # install-homebrew
 #
 # `install-homebrew` installs Homebrew on macOS & Linux
 
-if test ! $(which brew)
+if test ! "$(which brew)"
 then
-  echo "  › Installing Homebrew..."
+    echo "    ›› Installing Homebrew..."
 
-  if test "$(uname)" = "Darwin"
-  then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
-  then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
-  fi
 else
-  echo "  › Homebrew already installed, skipping..."
+  echo "    ›› Homebrew already installed, skipping..."
 fi
 
 exit 0

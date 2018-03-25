@@ -4,7 +4,8 @@
 #
 # `bundle-fac` bundles Brewfile.fac
 
-DOTFILESDIR="$(dirname $0)"/..
+DOTFILESDIR="$(dirname "$0")"/..
 
-echo "  › Bundling Brewfile.fac..."
-brew bundle --file=$DOTFILESDIR/Brewfile.fac >/dev/null
+echo "  ›› Bundling Brewfile.fac..."
+
+brew bundle --file="$DOTFILESDIR"/Brewfile.fac >/dev/null
