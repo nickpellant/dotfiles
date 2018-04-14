@@ -12,3 +12,5 @@ cask 'ivpn'
 cask 'slack'
 cask 'transmission'
 cask 'torbrowser'
+
+mas 'Things', id: 904280696
