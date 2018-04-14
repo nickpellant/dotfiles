@@ -16,3 +16,4 @@ cask 'transmission'
 cask 'torbrowser'
 
 mas 'Things', id: 904280696
+mas 'Tweetbot for Twitter', id: 557168941
