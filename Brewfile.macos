@@ -1,6 +1,8 @@
+tap 'caskroom/versions'
+
 brew 'syncthing', restart_service: true
 
-cask '1password'
+cask '1password-beta'
 cask 'aerial'
 cask 'alfred'
 cask 'anki'
