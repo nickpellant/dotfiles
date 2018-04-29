@@ -1,4 +1,5 @@
 brew 'asdf'
+brew 'postgresql'
 brew 'terraform'
 brew 'yarn', args: ['without-node']
 
