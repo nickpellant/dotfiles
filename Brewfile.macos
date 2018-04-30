@@ -17,6 +17,7 @@ cask 'plex-media-server'
 cask 'signal'
 cask 'slack'
 cask 'spotify'
+cask 'telegram-desktop'
 cask 'transmission'
 cask 'torbrowser'
 
