@@ -2,6 +2,7 @@ brew 'asdf'
 brew 'postgresql'
 brew 'terraform'
 brew 'yarn', args: ['without-node']
+brew 'watchman'
 
 cask 'atom'
 cask 'docker'
