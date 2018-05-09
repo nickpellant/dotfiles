@@ -23,5 +23,6 @@ cask 'torbrowser'
 cask 'viscosity'
 cask 'whatsapp'
 
+mas 'Divvy', id: 413857545
 mas 'Things', id: 904280696
 mas 'Tweetbot for Twitter', id: 557168941
