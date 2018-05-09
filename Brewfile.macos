@@ -20,6 +20,7 @@ cask 'spotify'
 cask 'telegram-desktop'
 cask 'transmission'
 cask 'torbrowser'
+cask 'whatsapp'
 
 mas 'Things', id: 904280696
 mas 'Tweetbot for Twitter', id: 557168941
