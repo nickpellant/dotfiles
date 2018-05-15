@@ -1,7 +1,8 @@
 #!/bin/zsh
 
 export USERDIR=/Users/$(whoami)
-export DOTFILESDIR=$USERDIR/Code/github.com/nickpellant/dotfiles
+export CODEDIR=$USERDIR/Code
+export DOTFILESDIR=$CODEDIR/github.com/nickpellant/dotfiles
 export ZSH=$USERDIR/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
