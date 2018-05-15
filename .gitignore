@@ -10,6 +10,6 @@ atom.symlink/blob-store
 atom.symlink/recovery
 
 dots/.gitconfig.local
-zsh/private.zsh
+zshs/private.zsh
 
 .DS_Store
