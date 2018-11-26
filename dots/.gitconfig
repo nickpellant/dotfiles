@@ -9,7 +9,7 @@
   branch = auto
   ui = true
 [core]
-  editor = nano
+  editor = 'atom' --wait
   trustctime = false
 [apply]
   whitespace = nowarn
