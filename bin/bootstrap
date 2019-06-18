@@ -8,6 +8,8 @@ BINDIR=$(dirname "$0")
 
 echo "  › Bootstrapping macOS..."
 
+"$BINDIR"/link-dots
+"$BINDIR"/install-oh-my-zsh
 "$BINDIR"/install-homebrew
 
 read -p "    ? Do you want to configure macOS defaults (y/n)? " -n 1 -r
@@ -19,6 +21,6 @@ else
     echo "    ›› Skipping macOS defaults configuration..."
 fi
 
-"$BINDIR"/bundle-macos
+"$BINDIR"/bundle
 
 echo "  › Bootstrapping complete."

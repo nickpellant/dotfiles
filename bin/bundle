@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# bundle-macos
+#
+# `bundle-macos` bundles Brewfile.macos
+
+DOTFILESDIR="$(dirname "$0")"/..
+
+echo "    ›› Bundling Brewfile..."
+
+brew bundle --file="$DOTFILESDIR"/Brewfile | sed 's/^/      /'
