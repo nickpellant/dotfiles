@@ -21,6 +21,4 @@ else
     echo "    ›› Skipping macOS defaults configuration..."
 fi
 
-"$BINDIR"/bundle
-
 echo "  › Bootstrapping complete."
