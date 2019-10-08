@@ -9,7 +9,7 @@
   branch = auto
   ui = true
 [core]
-  editor = 'atom' --wait
+  editor = 'code' --wait
   trustctime = false
 [apply]
   whitespace = nowarn
