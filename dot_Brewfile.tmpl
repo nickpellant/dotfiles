@@ -11,3 +11,8 @@ cask 'iterm2'
 cask 'firefox-developer-edition'
 cask 'visual-studio-code'
 cask 'gpg-suite'
+
+{{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
+# Personal MacBook Pro
+cask 'signal'
+{{- end}}
