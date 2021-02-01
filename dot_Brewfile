@@ -1,0 +1,13 @@
+tap 'homebrew/cask-versions'
+tap 'orf/brew'
+
+brew 'chezmoi'
+brew 'git-workspace'
+brew 'openssl'
+
+cask '1password'
+cask '1password-cli'
+cask 'iterm2'
+cask 'firefox-developer-edition'
+cask 'visual-studio-code'
+cask 'gpg-suite'
