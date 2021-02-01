@@ -33,7 +33,12 @@ export HOMEBREW_NO_ANALYTICS=1
 export GIT_WORKSPACE=~/Code
 
 # GitHub token from 1Password
+{{ if eq .chezmoi.hostname "Nick's MacBook Pro" -}}
 export GITHUB_TOKEN={{- (onepassword "qkax3atyuffnzlklzbak6ai3le").details.password }}
+{{ else if eq .chezmoi.hostname "C02CQ3ZPP3YV" -}}
+export GITHUB_TOKEN={{- (onepassword "uothrmlxkrb4zfophlmjrqe2pq").details.password }}
+export GITLAB_TOKEN={{- (onepassword "tvi5o6fp5fdu5bjjyaog5qlahu").details.password }}
+{{- end}}
 
 # Configure default editor
 export EDITOR="code --wait"
