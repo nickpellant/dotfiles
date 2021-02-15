@@ -40,5 +40,10 @@ export GITHUB_TOKEN={{- (onepassword "uothrmlxkrb4zfophlmjrqe2pq").details.passw
 export GITLAB_TOKEN={{- (onepassword "tvi5o6fp5fdu5bjjyaog5qlahu").details.password }}
 {{- end}}
 
+# Nexus configuration for work
+{{ if eq .chezmoi.hostname "C02CQ3ZPP3YV" -}}
+source "/Users/nick.pellant/Library/Application Support/creds/nexus"
+{{- end}}
+
 # Configure default editor
 export EDITOR="code --wait"
