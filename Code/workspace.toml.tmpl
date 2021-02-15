@@ -23,7 +23,21 @@ skip_forks = false
 {{ else if eq .chezmoi.hostname "C02CQ3ZPP3YV" -}}
 [[provider]]
 provider = "gitlab"
-name = "onfido"
+name = "onfido/client-acquisition-experience"
+url = "https://gitlab.eu-west-1.mgmt.onfido.xyz"
+path = "gitlab"
+env_var = "GITLAB_TOKEN"
+
+[[provider]]
+provider = "gitlab"
+name = "onfido/platform-stability"
+url = "https://gitlab.eu-west-1.mgmt.onfido.xyz"
+path = "gitlab"
+env_var = "GITLAB_TOKEN"
+
+[[provider]]
+provider = "gitlab"
+name = "onfido/shared"
 url = "https://gitlab.eu-west-1.mgmt.onfido.xyz"
 path = "gitlab"
 env_var = "GITLAB_TOKEN"
