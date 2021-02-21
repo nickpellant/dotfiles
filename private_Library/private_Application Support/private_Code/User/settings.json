@@ -5,5 +5,8 @@
     ],
     "atomKeymap.promptV3Features": true,
     "window.zoomLevel": 1,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "python.linting.banditEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false
 }
