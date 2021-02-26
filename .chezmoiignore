@@ -1,3 +1,7 @@
+Makefile
+README.md
+LICENSE
+
 {{- if ne .chezmoi.hostname "C02CQ3ZPP3YV" }}
 .ssh/id_rsa_nick.pellant@onfido.com.pub
 .ssh/id_rsa_nick.pellant@onfido.com
