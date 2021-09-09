@@ -9,10 +9,10 @@
     "python.linting.banditEnabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ]
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "telemetry.enableTelemetry": false
 }
