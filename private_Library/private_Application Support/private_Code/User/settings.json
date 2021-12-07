@@ -14,5 +14,9 @@
     },
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
-    "telemetry.enableTelemetry": false
+    "redhat.telemetry.enabled": false,
+    "diffEditor.renderSideBySide": false,
+    "files.insertFinalNewline": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "plantuml.jar": "/usr/local/Cellar/plantuml/1.2021.12/libexec/plantuml.jar",
 }
