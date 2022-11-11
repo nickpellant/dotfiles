@@ -17,17 +17,10 @@ cask 'visual-studio-code'
 
 {{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
 # Personal MacBook Pro
-brew 'poetry'
-
-cask 'anki'
-cask 'backblaze'
+# cask 'anki'
 cask 'firefox'
-cask 'firefox-developer-edition'
-cask 'kindle'
 cask 'notion'
 cask 'signal'
-cask 'steam'
-cask 'trezor-bridge'
 cask 'tor-browser'
 cask 'whatsapp'
 {{- end}}
