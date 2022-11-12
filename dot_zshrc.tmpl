@@ -35,7 +35,7 @@ export GIT_WORKSPACE=~/Code
 
 # GitHub token from 1Password
 {{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
-export GITHUB_TOKEN={{- (onepasswordDetailsFields "qkax3atyuffnzlklzbak6ai3le").password.value }}
+export GITHUB_TOKEN={{- (onepasswordDetailsFields "wehkadjno7bauenq2rtbczvtoy").credential.value }}
 {{ else if eq .chezmoi.hostname "C02CQ3ZPP3YV" -}}
 export GITHUB_TOKEN={{- (onepasswordDetailsFields "uothrmlxkrb4zfophlmjrqe2pq").password.value }}
 export GITLAB_TOKEN={{- (onepasswordDetailsFields "tvi5o6fp5fdu5bjjyaog5qlahu").password.value }}
