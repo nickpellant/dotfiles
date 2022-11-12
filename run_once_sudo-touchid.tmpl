@@ -1,6 +1,6 @@
-{{ if eq .chezmoi.os "darwin" -}}
 #!/usr/bin/env bash
 
+{{ if eq .chezmoi.os "darwin" -}}
 set -e
 
 case `grep -F "pam_tid" /etc/pam.d/sudo >/dev/null; echo $?` in

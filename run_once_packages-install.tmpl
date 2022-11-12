@@ -1,5 +1,7 @@
-{{ if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
+
+{{ if eq .chezmoi.os "darwin" -}}
+# .Brewfile hash: {{ include "dot_Brewfile.tmpl" | sha256sum }}
 
 brew bundle check --global || brew bundle --global
 
