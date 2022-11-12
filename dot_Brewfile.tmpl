@@ -17,6 +17,7 @@ cask 'visual-studio-code'
 
 {{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
 # Personal MacBook Pro
+brew 'asdf'
 brew 'mas'
 brew 'privoxy', restart_service: :changed
 
