@@ -41,8 +41,8 @@ export GITHUB_TOKEN={{- (onepasswordDetailsFields "uothrmlxkrb4zfophlmjrqe2pq").
 export GITLAB_TOKEN={{- (onepasswordDetailsFields "tvi5o6fp5fdu5bjjyaog5qlahu").password.value }}
 {{- end}}
 
-# Nexus configuration for work
 {{ if eq .chezmoi.hostname "C02CQ3ZPP3YV" -}}
+# Nexus configuration
 source "/Users/nick.pellant/Library/Application Support/creds/nexus"
 {{- end}}
 
