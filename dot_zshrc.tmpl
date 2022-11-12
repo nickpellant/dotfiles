@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+export PATH="/opt/homebrew/bin:$PATH"
 export USERDIR=/Users/$(whoami)
 export ZSH=$USERDIR/.oh-my-zsh
 
@@ -22,7 +23,7 @@ HIST_STAMPS="dd/mm/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(asdf bundler git gpg-agent)
+plugins=(bundler git gpg-agent)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,3 +48,6 @@ source "/Users/nick.pellant/Library/Application Support/creds/nexus"
 
 # Configure default editor
 export EDITOR="code --wait"
+
+# asdf
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
