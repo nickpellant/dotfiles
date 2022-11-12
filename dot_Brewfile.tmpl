@@ -1,32 +1,29 @@
 tap 'homebrew/cask-versions'
 tap 'orf/brew'
 
+# All
+brew 'asdf'
 brew 'bash'
 brew 'chezmoi'
 brew 'git-workspace'
+brew 'mas'
 brew 'openssl'
 brew 'plantuml'
-
 cask '1password'
 cask '1password-cli'
 cask 'google-chrome'
 cask 'gpg-suite-no-mail'
 cask 'iterm2'
+cask 'firefox'
 cask 'spotify'
 cask 'visual-studio-code'
 
 {{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
-# Personal MacBook Pro
-brew 'asdf'
-brew 'mas'
+# Nick's MacBook Pro
 brew 'privoxy', restart_service: :changed
-
-# cask 'anki'
-cask 'firefox'
 cask 'notion'
 cask 'signal'
 cask 'tor-browser'
 cask 'whatsapp'
-
 mas '1Password for Safari', id: 1569813296
 {{- end}}
