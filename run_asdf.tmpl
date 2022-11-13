@@ -1,5 +1,10 @@
 #!/bin/sh
-# {{ .chezmoi.version.date | sha256sum }}
+
+{{ if eq .chezmoi.os "darwin" -}}
+  if ! command -v asdf; then
+    brew install asdf
+  fi
+{{ end -}}
 
 declare -a plugins=("ruby" "python" "nodejs")
 
