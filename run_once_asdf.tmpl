@@ -1,0 +1,18 @@
+#!/bin/sh
+# {{ .chezmoi.version.date | sha256sum }}
+
+declare -a plugins=("ruby" "python" "nodejs")
+
+for plugin in "${plugins[@]}"
+do
+  if ! asdf plugin list | grep -q $plugin; then
+    asdf plugin add $plugin
+  else
+    asdf plugin-update $plugin
+  fi
+
+  if ! asdf list $plugin | grep -q $(asdf latest $plugin); then
+    asdf install $plugin latest
+    asdf global $plugin latest
+  fi
+done
