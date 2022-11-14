@@ -22,6 +22,7 @@ cask 'visual-studio-code'
 {{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
 # Nick's MacBook Pro
 brew 'privoxy', restart_service: :changed
+brew 'postgresql@15', link: true
 cask 'notion'
 cask 'signal'
 cask 'tor-browser'
