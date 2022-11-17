@@ -21,6 +21,8 @@ cask 'visual-studio-code'
 
 {{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
 # Nick's MacBook Pro
+tap 'heroku/brew'
+brew 'heroku'
 brew 'privoxy', restart_service: :changed
 brew 'postgresql@15', link: true
 cask 'grammarly-desktop'
