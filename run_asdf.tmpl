@@ -6,7 +6,7 @@
   fi
 {{ end -}}
 
-declare -a plugins=("ruby" "python" "nodejs")
+declare -a plugins=("ruby" "python")
 
 for plugin in "${plugins[@]}"
 do
@@ -21,3 +21,8 @@ do
     asdf global $plugin latest
   fi
 done
+
+asdf plugin add nodejs
+asdf plugin-update nodejs
+asdf install nodejs lts
+asdf global nodejs lts
