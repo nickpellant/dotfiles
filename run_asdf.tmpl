@@ -23,6 +23,10 @@ do
 done
 
 asdf plugin add nodejs
+
 asdf plugin-update nodejs
+
+export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_available
 asdf install nodejs lts
+
 asdf global nodejs lts
