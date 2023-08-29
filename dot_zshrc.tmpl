@@ -36,12 +36,12 @@ export GIT_WORKSPACE=~/Code
 # GitHub token from 1Password
 {{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
 export GITHUB_TOKEN={{- (onepasswordDetailsFields "wehkadjno7bauenq2rtbczvtoy").credential.value }}
-{{ else if eq .chezmoi.hostname "C02CQ3ZPP3YV" -}}
+{{ else if eq .chezmoi.hostname "KLWFPXHCPQ" -}}
 export GITHUB_TOKEN={{- (onepasswordDetailsFields "uothrmlxkrb4zfophlmjrqe2pq").password.value }}
 export GITLAB_TOKEN={{- (onepasswordDetailsFields "tvi5o6fp5fdu5bjjyaog5qlahu").password.value }}
 {{- end}}
 
-{{ if eq .chezmoi.hostname "C02CQ3ZPP3YV" -}}
+{{ if eq .chezmoi.hostname "KLWFPXHCPQ" -}}
 # Nexus configuration
 source "/Users/nick.pellant/Library/Application Support/creds/nexus"
 {{- end}}
