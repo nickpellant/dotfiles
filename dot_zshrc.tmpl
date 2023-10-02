@@ -44,6 +44,9 @@ export GITLAB_TOKEN={{- (onepasswordDetailsFields "tvi5o6fp5fdu5bjjyaog5qlahu").
 {{ if eq .chezmoi.hostname "KLWFPXHCPQ" -}}
 # Nexus configuration
 source "/Users/nick.pellant/Library/Application Support/creds/nexus"
+
+alias docker=podman
+alias docker-compose=podman-compose
 {{- end}}
 
 # Configure default editor
