@@ -36,17 +36,9 @@ export GIT_WORKSPACE=~/Code
 # GitHub token from 1Password
 {{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
 export GITHUB_TOKEN={{- (onepasswordDetailsFields "wehkadjno7bauenq2rtbczvtoy").credential.value }}
-{{ else if eq .chezmoi.hostname "KLWFPXHCPQ" -}}
+{{ else if eq .chezmoi.hostname "MBP-894" -}}
 export GITHUB_TOKEN={{- (onepasswordDetailsFields "uothrmlxkrb4zfophlmjrqe2pq").password.value }}
 export GITLAB_TOKEN={{- (onepasswordDetailsFields "tvi5o6fp5fdu5bjjyaog5qlahu").password.value }}
-{{- end}}
-
-{{ if eq .chezmoi.hostname "KLWFPXHCPQ" -}}
-# Nexus configuration
-source "/Users/nick.pellant/Library/Application Support/creds/nexus"
-
-alias docker=podman
-alias docker-compose=podman-compose
 {{- end}}
 
 # Configure default editor
@@ -55,6 +47,10 @@ export EDITOR="code --wait"
 # Homebrew sbin
 export PATH="/opt/homebrew/sbin:$PATH"
 
+# libpq
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+
 # asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
-

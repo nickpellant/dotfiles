@@ -20,25 +20,12 @@ path = "github"
 env_var = "GITHUB_TOKEN"
 skip_forks = true
 
-{{ else if eq .chezmoi.hostname "KLWFPXHCPQ" -}}
+{{ else if eq .chezmoi.hostname "MBP-894" -}}
 [[provider]]
 provider = "gitlab"
-name = "onfido/client-acquisition-experience"
+name = "Onfido"
 url = "https://gitlab.eu-west-1.mgmt.onfido.xyz"
 path = "gitlab"
 env_var = "GITLAB_TOKEN"
-
-[[provider]]
-provider = "gitlab"
-name = "onfido/platform-stability"
-url = "https://gitlab.eu-west-1.mgmt.onfido.xyz"
-path = "gitlab"
-env_var = "GITLAB_TOKEN"
-
-[[provider]]
-provider = "gitlab"
-name = "onfido/shared"
-url = "https://gitlab.eu-west-1.mgmt.onfido.xyz"
-path = "gitlab"
-env_var = "GITLAB_TOKEN"
+exclude = []
 {{- end}}

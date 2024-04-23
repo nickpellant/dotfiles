@@ -2,7 +2,7 @@ Makefile
 README.md
 LICENSE
 
-{{- if ne .chezmoi.hostname "KLWFPXHCPQ" }}
+{{- if ne .chezmoi.hostname "MBP-894" }}
 .ssh/id_rsa_nick.pellant@onfido.com.pub
 .ssh/id_rsa_nick.pellant@onfido.com
 {{- end }}
