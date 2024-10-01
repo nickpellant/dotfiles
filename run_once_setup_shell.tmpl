@@ -1,0 +1,36 @@
+#!/bin/zsh
+# This script adds the Zsh binary to the system shells and changes the
+# default shell to Zsh.
+
+# Stop script execution on errors or undefined variables
+set -uo pipefail
+
+# Get the installation prefix
+PREFIX=$(brew --prefix)
+
+# Update the user path in launchctl to include the binaries
+echo "Configuring launchctl user path to include binaries..."
+sudo launchctl config user path "$PREFIX/bin:$PATH"
+echo "Launchctl user path updated."
+
+# Check if the Zsh binary path is already listed in /etc/shells
+echo "Checking if Zsh is already added to the list of valid shells..."
+if ! grep -Fxq "$PREFIX/bin/zsh" /etc/shells; then
+  # Add Zsh to /etc/shells if it is not already present
+  echo "Zsh not found in /etc/shells. Adding it now..."
+  echo "$PREFIX/bin/zsh" | sudo tee -a /etc/shells
+  echo "Zsh added to /etc/shells."
+else
+  echo "Zsh is already listed in /etc/shells."
+fi
+
+# Change the default shell to Zsh for the current user
+echo "Changing default shell to Zsh..."
+chsh -s "$PREFIX/bin/zsh"
+
+# Final confirmation message
+if [ $? -eq 0 ]; then
+  echo "Default shell successfully changed to Zsh."
+else
+  echo "Error: Could not change the default shell to Zsh."
+fi
