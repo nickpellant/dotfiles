@@ -2,12 +2,5 @@ Makefile
 README.md
 LICENSE
 
-{{- if ne .chezmoi.hostname "MBP-894" }}
-.ssh/id_rsa_nick.pellant@onfido.com.pub
-.ssh/id_rsa_nick.pellant@onfido.com
-{{- end }}
-
-{{- if ne .chezmoi.hostname "Nicks-MacBook-Pro" }}
 .ssh/id_ed25519_nick@nickpellant.com.pub
 .ssh/id_ed25519_nick@nickpellant.com
-{{- end }}

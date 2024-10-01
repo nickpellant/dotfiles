@@ -1,4 +1,3 @@
-{{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
 [[provider]]
 provider = "github"
 name = "rainmakerteam"
@@ -19,13 +18,3 @@ name = "nickpellant"
 path = "github"
 env_var = "GITHUB_TOKEN"
 skip_forks = true
-
-{{ else if eq .chezmoi.hostname "MBP-894" -}}
-[[provider]]
-provider = "gitlab"
-name = "Onfido"
-url = "https://gitlab.eu-west-1.mgmt.onfido.xyz"
-path = "gitlab"
-env_var = "GITLAB_TOKEN"
-exclude = []
-{{- end}}

@@ -1,43 +1,30 @@
+# Taps
 tap 'homebrew/cask-versions'
 tap 'orf/brew'
 
-# All
+# Brew packages
 brew 'asdf'
 brew 'bash'
 brew 'chezmoi'
+brew 'git'
 brew 'git-workspace'
 brew 'mas'
 brew 'openssl'
-brew 'plantuml'
+
+# Cask applications
 cask '1password'
 cask '1password-cli'
-cask 'google-chrome'
+cask 'docker'
+cask 'figma'
 cask 'gpg-suite-no-mail'
 cask 'iterm2'
-cask 'firefox'
-cask 'firefox-nightly'
-cask 'microsoft-edge'
-cask 'slack'
+cask 'notion'
 cask 'spotify'
 cask 'visual-studio-code'
-cask 'zoom'
 
-{{ if eq .chezmoi.hostname "Nicks-MacBook-Pro" -}}
-# Nick's MacBook Pro
-tap 'heroku/brew'
-brew 'heroku'
-brew 'privoxy', restart_service: :changed
-brew 'postgresql@15', link: true
-cask 'amazon-chime'
-cask 'freecad'
-cask 'ivpn'
-cask 'notion'
-cask 'rectangle-pro'
-cask 'signal'
-cask 'tor-browser'
-cask 'whatsapp'
+# Mac App Store applications
 mas '1Password for Safari', id: 1569813296
-mas 'Habitify', id: 1111447047
+mas 'AdGuard for Safari', id: 1440147259
+mas 'Notion Web Clipper', id: 1559269364
 mas 'Things', id: 904280696
 mas 'Xcode', id: 497799835
-{{- end}}
