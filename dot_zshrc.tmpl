@@ -1,0 +1,4 @@
+export GIT_WORKSPACE=~/Code
+export GITHUB_TOKEN={{ (index (onepassword .onepassword_github_token_uuid).fields 1).value }}
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"

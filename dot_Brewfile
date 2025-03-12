@@ -1,0 +1,25 @@
+# Brew packages
+brew 'asdf'
+brew 'chezmoi'
+brew 'git'
+brew 'git-workspace'
+brew 'mas'
+brew 'zsh'
+
+# Cask packages
+cask '1password'
+cask '1password-cli'
+cask 'cursor'
+cask 'docker'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'notion'
+cask 'spotify'
+cask 'visual-studio-code'
+
+# Mac App Store applications
+mas '1Password for Safari', id: 1569813296
+mas 'AdGuard for Safari', id: 1440147259
+mas 'Notion Web Clipper', id: 1559269364
+mas 'Things', id: 904280696
+mas 'Xcode', id: 497799835

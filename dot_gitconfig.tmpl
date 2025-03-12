@@ -1,0 +1,24 @@
+# Local/private config goes in the include
+[include]
+  path = ~/.gitconfig.local
+  
+[core]
+  editor = {{ .editor }}
+  excludesfile = {{ .chezmoi.homeDir }}/.gitignore_global
+
+[commit]
+  gpgsign = true
+
+[push]
+  autoSetupRemote = true
+
+[user]
+  name = "{{ .name }}"
+  email = "{{ .email }}"
+  signingkey = {{ .signingkey }}
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = {{ .gpg_ssh_program | default "/usr/bin/ssh-keygen" }}

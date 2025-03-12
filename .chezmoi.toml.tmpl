@@ -1,0 +1,12 @@
+{{- $email := promptStringOnce . "email" "Email address" -}}
+{{- $name := promptStringOnce . "name" "Full name" -}}
+{{- $signingkey := promptStringOnce . "signingkey" "Signing key" -}}
+{{- $onepassword_github_token_uuid := promptStringOnce . "onepassword_github_token_uuid" "1Password GitHub token UUID" -}}
+
+[data]
+    email = {{ $email | quote }}
+    name = {{ $name | quote }}
+    signingkey = {{ $signingkey | quote }}
+    editor = "'code' --wait"
+    gpg_ssh_program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+    onepassword_github_token_uuid = {{ $onepassword_github_token_uuid | quote }}
