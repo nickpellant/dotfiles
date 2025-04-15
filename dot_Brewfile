@@ -9,6 +9,7 @@ brew 'zsh'
 # Cask packages
 cask '1password'
 cask '1password-cli'
+cask 'chatgpt'
 cask 'cursor'
 cask 'docker'
 cask 'figma'
