@@ -1,9 +1,14 @@
 # Brew packages
-brew 'asdf'
+brew 'autoconf'
 brew 'chezmoi'
-brew 'git'
 brew 'git-workspace'
+brew 'git'
+brew 'gmp'
+brew 'libyaml'
 brew 'mas'
+brew 'mise'
+brew 'openssl'
+brew 'readline'
 brew 'zsh'
 
 # Cask packages

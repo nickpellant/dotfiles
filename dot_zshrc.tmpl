@@ -1,8 +1,6 @@
 export GIT_WORKSPACE=~/Code
 export GITHUB_TOKEN={{ (index (onepassword .onepassword_github_token_uuid).fields 1).value }}
 
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -75,7 +73,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew git asdf)
+plugins=(brew git mise)
 
 source $ZSH/oh-my-zsh.sh
 
